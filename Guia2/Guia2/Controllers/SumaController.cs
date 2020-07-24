@@ -15,7 +15,8 @@ namespace Guia2.Controllers
         [HttpPost]
         public IActionResult Index(decimal x, decimal y)
         {
-            ViewData["result"] = x + y;
+            ViewData["result"] = $"Resultado: {x + y}";
+            ViewData["style"] = "alert-success";
             return View();
         }
 

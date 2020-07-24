@@ -4,15 +4,15 @@
 }
 
 <div class="row">
-    <div class="col-md-5"></div>
-    <div class="col-md-3">
-        <h1 class="text-center">Potencia</h1>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <h2 class="text-center">Potencia</h2>
         <form action="/potencia/index" method="post">
 
-            <h2 class="text-center">Resulta: @ViewData["resultado"]</h2>
+            <h5 class="text-center">Resulta: @ViewData["resultado"]</h5>
             <br />
             <label>Ingrese el numero</label>
-            <input class="form-control" type="number" name="numero" value="" required />
+            <input class="form-control" type="number" name="numero" step="any" value="" required />
             <br />
             <label>Ingrese la potencia</label>
             <input class="form-control" type="number" name="potencia" value="" required />

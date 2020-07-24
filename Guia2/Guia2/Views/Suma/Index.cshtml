@@ -8,14 +8,13 @@
         <div class="col-md-3">
             <h1 class="text-center">Suma</h1>
             <form action="/suma/index" method="post">
-
-                <h2 class="text-center">Resulta: @ViewData["result"]</h2>
+                <h5 class="text-center @ViewData["style"]">@ViewData["result"]</h5>
                 <br />
                 <label>Ingrese el numero A</label>
-                <input class="form-control"  type="number" name="x" value="" required/>
+                <input class="form-control"  type="number" step="any" name="x" value="" required/>
                 <br />
                 <label>Ingrese el numero B</label>
-                <input class="form-control"  type="number" name="y" value="" required/>
+                <input class="form-control"  type="number" step="any" name="y" value="" required/>
                 <br />
                 <input class="text-center btn btn-danger" type="submit" name="name" value="Sumar" />
                 <br />
