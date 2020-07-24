@@ -3,5 +3,22 @@
     ViewData["Title"] = "Suma";
 }
 
-<h1>Index</h1>
+    <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-3">
+            <h1 class="text-center">Suma</h1>
+            <form action="/suma/index" method="post">
+
+                <h2 class="text-center">Resulta: @ViewData["result"]</h2>
+                <br />
+                <input class="form-control"  type="number" name="x" value="" required/>
+                <br />
+                <input class="form-control"  type="number" name="y" value="" required/>
+                <br />
+                <input class="text-center btn btn-primary" type="submit" name="name" value="Sumar" />
+                <br />
+
+            </form>
+        </div>
+    </div>
 
